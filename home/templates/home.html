@@ -1,10 +1,8 @@
 {% extends 'base.html' %}
-
-{% block title %} Gestao de clientes {% endblock %}
+{% block pageTitle %}Gestao de clientes{% endblock %}
+{% block sectionTitle %}Seja bem vindo!{% endblock %}
 
 {% block main %}
-    <h1>Seja bem vindo!</h1>
-
     {% if user.is_authenticated %}
         <p>Olá {{ user.username }}</p>
         <a href="{% url 'logout' %}" class="btn btn-secondary">Logout</a>
